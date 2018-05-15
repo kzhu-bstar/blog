@@ -40,7 +40,7 @@ relative_link: false
 future: true
 highlight:
   enable: false
-  line_number: false
+  line_number: true
   auto_detect: false
   tab_replace:
   
@@ -80,4 +80,6 @@ theme: material
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: https://github.com/freelifer/freelifer.github.io.git
+  branch: master
