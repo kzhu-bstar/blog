@@ -24,6 +24,8 @@ block main
           if (page.tags && page.tags.length)
             .post-tags
               != list_tags(page.tags, {show_count: false, class: 'post-tag', style:'none', separator:''})
+            .post-tags
+              = wordcount(page.content)
           .post-time= page.date.format(config.date_format)
 
       .container.post-header
