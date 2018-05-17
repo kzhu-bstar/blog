@@ -127,8 +127,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
 
     @media only screen and (max-width: @break-level-2) {
         flex-wrap: wrap;
@@ -141,9 +141,8 @@ h1,h2,h3,h4,h5,h6 {
     .post-tag-link {
         color: @color-ignore;
         margin: 0 4px;
-        &::before {
-            content: '#';
-        }
+        font-size: 0.8em;
+
         &:hover {
             color: @color-main-link;
             border-color: @color-main-link;
@@ -159,6 +158,38 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 0.8em;
         padding-left: 4px;
     }
+}
+
+.subhead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media only screen and (max-width: @break-level-2) {
+        flex-wrap: wrap;
+    }
+    
+    .post-time {
+        color: @color-ignore;
+        display: inline-block;
+        font-size: 0.8em;
+        padding-left: 4px;
+    }
+
+    .post-word-count {
+        color: @color-ignore;
+        display: inline-block;
+        font-size: 0.8em;
+        padding-left: 4px;
+    }
+}
+
+.custom-strick {
+    color: @color-ignore;
+    display: inline-block;
+    font-size: 0.8em;
+    padding-left: 8px;
+    padding-right: 4px;
 }
 
 .sidebar-nav-item {
