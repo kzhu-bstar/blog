@@ -5,8 +5,6 @@ tags: [android]
 categories: 源码阅读
 ---
 
-
-
 ArrayMap 可以用来代替HashMap，它是一个<key,value>映射的数据结构，设计上更多的是考虑了内存的优化。
 
 ### ArrayMap基础知识
