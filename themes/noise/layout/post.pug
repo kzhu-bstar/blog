@@ -70,6 +70,9 @@ block main
       .container.post-content
         != page.content
 
+      if (!is_index)
+        include _partial/passage-end-tag.pug
+      
     include _partial/mathjax.pug
 
     //- .post-main.post-comment
