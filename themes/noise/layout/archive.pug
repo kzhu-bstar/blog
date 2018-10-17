@@ -20,7 +20,7 @@ block main
     input#menu(type="checkbox")
     .container.nav-items
       each nav, name in theme.menu
-        +a_with_current(nav, __(name))
+        +a_with_current(nav, __('menu.' + name))
 
   article.wrapper
     .post-entry
